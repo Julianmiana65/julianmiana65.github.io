@@ -23,46 +23,43 @@ $texto: 18px;
   width: 150px;
   height: 150px;
   position: absolute;
-  left: 550px;
+  left: 450px;
   top: 10px;
   border: 0;
 }
   .nav 
-  { text-align: center;
+  { 
     @include listas;
     font-size: $texto;
-    color: white;
-    margin: 8px;
-    padding: 12px;
+    color: #FFFFFF ;
+    margin: 20px;
+    padding: 20px;
     border: 1px;
     border-style: solid;
     border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
     
   }
   
 
   a {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    list-style-type: none;
+    color: #FFFFFF ;
+    @include listas;
     margin: 25px/2;
     padding: 7px;
   
   &:hover {
-    color: yellow;
-    text-decoration: none;
-      list-style: none;
-      list-style-type: none;}}
+    color: #FF851B ;
+    @include listas;
+  cursor: pointer;}}
       
   
  
   
   body{
     text-align: center;
-    text-decoration: none;
-      list-style: none;
-      list-style-type: none;
+    @include listas;
       background-image: linear-gradient(-45deg, rgb(30, 30, 34) 75%, rgb(66, 38, 57) 25% );
       background-position: center;
       background-repeat: no-repeat;
@@ -80,6 +77,8 @@ $texto: 18px;
     margin-top: 12px;
     margin-bottom: 12px;
     opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
   }
   
   @keyframes titulo-animado {
@@ -91,25 +90,19 @@ $texto: 18px;
     }
   }
   
-  p{
-    font-size: $texto;
-    font-family: sans-serif;
-    font-stretch:normal;
-    text-align: start;
-    color:  $txtcolor;
-  }
-
 
   h2 {
     color: $txtcolor;
     font-size: $subtitulo;
     margin-bottom: 25px;
     margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   h2 a {
     color: $txtcolor;
     font-size: $subtitulo;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   h3  {
@@ -117,11 +110,23 @@ $texto: 18px;
     font-size: $texto;
     margin-bottom: 25px;
     margin-top: 12px;
-  }
+    font-family: Arial, Helvetica, sans-serif; }
+    
 
-  p 
-  {text-align: center;
-  margin-bottom: 25px;}
+  p{
+    font-size: $texto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch:normal;
+    color:  $txtcolor;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 75px;
+    margin-bottom: 25px;
+    word-spacing: 5px;
+    justify-content: start;
+    line-height: 30px;
+  }
 
   .container
   {
@@ -129,9 +134,8 @@ $texto: 18px;
     height: 30%;
     padding: 0px;
     text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    list-style: none;
+    @include listas;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
 // grid-home
@@ -145,12 +149,14 @@ $texto: 18px;
     column-gap: 25px;
     align-content: space-between;
     margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
  .child1
   {
   margin: 25px;
   padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   border: whitesmoke 3px solid;
   border-radius: 15px;
   height: 300px;
@@ -162,6 +168,7 @@ $texto: 18px;
   {
     margin: 25px;
   padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   border: whitesmoke 3px solid;
   border-radius: 15px;
   height: 300px;
@@ -174,6 +181,7 @@ $texto: 18px;
 {
   margin: 25px;
   padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   border: whitesmoke 3px solid;
   border-radius: 15px;
   height: 300px;
@@ -185,6 +193,7 @@ $texto: 18px;
   {
     margin: 25px;
   padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   border: whitesmoke 3px solid;
   border-radius: 15px;
   height: 300px;
@@ -196,6 +205,7 @@ $texto: 18px;
   {
     margin: 25px;
   padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   border: whitesmoke 3px solid;
   border-radius: 15px;
   height: 300px;
@@ -207,6 +217,7 @@ $texto: 18px;
   {
     margin: 25px;
   padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   border: whitesmoke 3px solid;
   border-radius: 15px;
   height: 300px;
@@ -231,6 +242,7 @@ div .child7
   {
     margin: 10px;
     padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
     border: whitesmoke 3px solid;
     border-radius: 15px;
     height: 700px;
@@ -242,6 +254,7 @@ div .child7
   {
     margin: 10px;
     padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
     border: whitesmoke 3px solid;
     border-radius: 15px;
     height: auto;
@@ -254,6 +267,7 @@ div .child7
   {
     margin: 5px;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     border: whitesmoke 3px solid;
     border-radius: 15px;
     grid-column: 3;
@@ -265,6 +279,7 @@ div .child7
   {
     margin: 5px;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     border: whitesmoke 3px solid;
     border-radius: 15px;
     grid-column: 3;
@@ -277,6 +292,7 @@ div .child7
   {
     margin: 15px;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     border: whitesmoke 3px solid;
     border-radius: 15px;
     width: auto;
@@ -294,6 +310,7 @@ display: flex;
 flex-direction: column;
 min-height: 63vh;
 font-weight: 400;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 footer h2 
@@ -304,9 +321,7 @@ footer h2
 
 footer ul li
 {
-  text-decoration: none;
-  list-style-type: none;
-  list-style: none;
+  @include listas;
 }
 
 #formulario{
@@ -344,5 +359,4 @@ footer ul li
   h1 { font-size: 30px;}
   h2 { font-size: 22px;}
   h3 { font-size: 20px;}
-
 }
